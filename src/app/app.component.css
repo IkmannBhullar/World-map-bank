@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#left-column, #right-column {
+  flex: 1;
+  padding: 16px;
+}
+
+#left-column {
+  border-right: 1px solid #ddd;
+}
+
+#right-column {
+  max-width: 400px;
+}
+
+header {
+  background-color: #f8f8f8;
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #007bff;
+  transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+svg:hover {
+  transform: scale(1.05);
+}
+
+path:hover {
+  fill: darkorange;
+  transition: fill 0.3s ease-in-out;
+}
